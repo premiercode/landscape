@@ -555,10 +555,11 @@
 
       <form class="form" id="consult-form" aria-labelledby="form-title">
         <h3 class="form__title" id="form-title">Request a free design consultation</h3>
+        <p class="form__req">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden"> with an asterisk</span> are required.</p>
 
         <div class="form__row form__row--2">
           <div class="field">
-            <label for="f-name">Name</label>
+            <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
             <input id="f-name" name="name" type="text" autocomplete="name" required>
           </div>
           <div class="field">
@@ -569,11 +570,11 @@
 
         <div class="form__row form__row--2">
           <div class="field">
-            <label for="f-email">Email</label>
+            <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
             <input id="f-email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
-            <label for="f-city">City</label>
+            <label for="f-city">City <span class="req" aria-hidden="true">*</span></label>
             <select id="f-city" name="city" required>
               <option value="">Choose a city</option>
               <option>McKinney</option>

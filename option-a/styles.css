@@ -286,7 +286,7 @@
   }
   @media (max-width: 1099px) { html:not(.js) .site-header { position: relative; } }
   @media (max-width: 640px) {
-    .btn__long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .btn__long { display: none; }
     .btn__short { display: inline; }
     .js .menu-toggle__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
     .js .menu-toggle { padding: 0 0.8rem; }
@@ -411,7 +411,7 @@
     .hero__media img { animation: settle 2.8s var(--ease-out) both; }
     .hero__cue-line::after {
       content: ""; position: absolute; left: 0; top: -40%; width: 1px; height: 40%; background: var(--cream);
-      animation: drip 2.6s var(--ease-soft) 1.6s infinite;
+      animation: drip 2.6s var(--ease-soft) 1.6s 1;
     }
   }
   @keyframes rise { from { opacity: 0; transform: translateY(22px); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
@@ -497,7 +497,7 @@
     position: absolute; inset: auto 0 0 0;
     padding: 2.5rem 1.1rem 0.95rem;
     font-size: 0.9rem; font-weight: 500; color: var(--cream);
-    background: linear-gradient(180deg, transparent, rgb(8 14 11 / 0.88));
+    background: linear-gradient(180deg, rgb(8 14 11 / 0.55), rgb(8 14 11 / 0.88));
   }
   .gallery__item--feature figcaption { text-wrap: balance; padding: 4rem 1.75rem 1.5rem; font-family: var(--font-display); font-size: clamp(1.15rem, 1.6vw, 1.5rem); }
   .gallery__kicker {
@@ -553,7 +553,7 @@
   }
   .js .ba__knob {
     position: absolute; top: 50%; left: 50%; width: 52px; height: 52px; transform: translate(-50%, -50%);
-    border-radius: 50%; background: var(--amber); box-shadow: 0 6px 24px rgb(0 0 0 / 0.5);
+    border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 2px var(--ink), 0 6px 24px rgb(0 0 0 / 0.5);
     display: grid; place-items: center;
   }
   .js .ba__knob::before {
@@ -795,7 +795,7 @@
   .field input:not([type="checkbox"]), .field select, .field textarea {
     width: 100%; min-height: 48px; padding: 0.7rem 0.9rem;
     background: rgb(8 14 11 / 0.6); color: var(--cream);
-    border: 1px solid rgb(244 236 220 / 0.32); border-radius: 6px;
+    border: 1px solid rgb(244 236 220 / 0.45); border-radius: 6px;
     transition: border-color 0.25s, box-shadow 0.25s, background-color 0.25s;
   }
   .field select {
@@ -807,7 +807,7 @@
   .field select option { background: var(--forest); color: var(--cream); }
   .field textarea { min-height: 7rem; resize: vertical; }
   .field input::placeholder, .field textarea::placeholder { color: var(--cream-3); opacity: 1; }
-  .field input:hover, .field select:hover, .field textarea:hover { border-color: rgb(244 236 220 / 0.5); }
+  .field input:hover, .field select:hover, .field textarea:hover { border-color: rgb(244 236 220 / 0.6); }
   .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible {
     outline: none; border-color: var(--amber-hi); box-shadow: 0 0 0 3px rgb(240 180 90 / 0.3); background: rgb(8 14 11 / 0.85);
   }

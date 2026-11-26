@@ -725,7 +725,7 @@ em { font-style: italic; }
 }
 .ba__knob::before { left: 11px; border-right: 8px solid var(--sage-700); }
 .ba__knob::after { right: 11px; border-left: 8px solid var(--sage-700); }
-.js .ba__range:focus-visible + .ba__handle .ba__knob { outline: 3px solid var(--clay); outline-offset: 3px; }
+.js .ba__range:focus-visible + .ba__handle .ba__knob { outline: none; box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--clay); }
 
 @media (min-width: 900px) {
   .compare { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(2rem, 1rem + 2vw, 3rem); align-items: center; }
@@ -1038,7 +1038,7 @@ em { font-style: italic; }
   font: inherit;
   color: var(--ink);
   background: #fff;
-  border: 1px solid #a9ad9c;
+  border: 1px solid var(--sage-600);
   border-radius: var(--radius-md);
   transition: border-color 150ms var(--ease), box-shadow 150ms var(--ease);
 }
@@ -1051,7 +1051,7 @@ em { font-style: italic; }
   background-repeat: no-repeat;
   background-position: right 0.9rem center;
 }
-.field input:hover, .field select:hover, .field textarea:hover { border-color: var(--sage-600); }
+.field input:hover, .field select:hover, .field textarea:hover { border-color: var(--sage-700); }
 .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible {
   outline: none;
   border-color: var(--sage-700);
@@ -1198,6 +1198,13 @@ em { font-style: italic; }
   .js .botanic[data-draw], .js .stages[data-draw] .stage__glyph { stroke-dashoffset: 0; }
   .plate:hover img { transform: none; }
 }
+
+/* Accessibility fixes (WCAG 2.2 AA audit) */
+.site-footer :focus-visible, .skip-link:focus-visible { outline-color: #fff; }
+.ba__knob { border: 2px solid var(--sage-800); }
+.form__req { margin: 0 0 1rem; font-size: .875rem; color: var(--ink-soft); }
+.req { color: var(--clay); font-weight: 600; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Switcher side effect: the library switcher pads every direct child of <body> that is the last of its
    tag type (meant for the footer). These higher-specificity rules restore this page's own

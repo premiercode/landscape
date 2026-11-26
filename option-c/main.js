@@ -145,7 +145,7 @@
     if (!form || !btn || !status) { return; }
     function handle(e) {
       if (e) { e.preventDefault(); }
-      form.reportValidity();
+      if (!form.reportValidity()) { return; }
       status.textContent = "";
       window.setTimeout(function () { status.textContent = "Preview only. Nothing was sent."; }, 50);
     }
