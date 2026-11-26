@@ -67,7 +67,11 @@
       p.setAttribute("tabindex", "0");
     });
 
+    var months = Array.prototype.slice.call(cal.querySelectorAll(".cal-year .m"));
+
     function select(index, focus, animate) {
+      var key = tabs[index].getAttribute("data-season");
+      months.forEach(function (m) { m.classList.toggle("is-on", m.getAttribute("data-season") === key); });
       tabs.forEach(function (t, i) {
         var on = i === index;
         t.setAttribute("aria-selected", on ? "true" : "false");
@@ -99,17 +103,31 @@
       });
     });
 
-    var season = currentSeason(new Date());
+    var today = new Date();
+    var season = currentSeason(today);
     var start = 0;
     tabs.forEach(function (t, i) {
       if (t.getAttribute("data-season") === season) {
         start = i;
-        var now = t.querySelector(".cal-now");
-        if (now) {
-          now.hidden = false;
-          t.setAttribute("aria-label", t.textContent.replace(/\s*Now\s*$/, "").trim() + " (current season)");
-        }
+        var name = t.querySelector(".cal-tab-name").textContent;
+        var range = t.querySelector(".cal-tab-months").textContent;
+        t.setAttribute("aria-label", name + ", " + range + " (current season)");
       }
+    });
+
+    // 12-month strip: stamp "Now" on this month; clicking a month opens its season.
+    months.forEach(function (m) {
+      if (Number(m.getAttribute("data-month")) === today.getMonth()) {
+        var stamp = document.createElement("span");
+        stamp.className = "cal-now";
+        stamp.textContent = "Now";
+        m.appendChild(stamp);
+        m.setAttribute("aria-current", "date");
+      }
+      m.addEventListener("click", function () {
+        var key = m.getAttribute("data-season");
+        tabs.forEach(function (t, i) { if (t.getAttribute("data-season") === key) { select(i, false, true); } });
+      });
     });
 
     tablist.hidden = false;

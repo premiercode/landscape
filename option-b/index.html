@@ -78,7 +78,7 @@
         <li><a href="#reviews">Reviews</a></li>
       </ul>
     </nav>
-    <a class="btn btn--primary btn--header" href="#consult">Request a free design consultation</a>
+    <a class="btn btn--primary btn--header" href="#consult"><span class="btn__long">Request a free design consultation</span><span class="btn__short">Free consultation</span></a>
   </div>
 </header>
 
@@ -169,7 +169,7 @@
         <li class="service service--irrigation">
           <span class="service__num" aria-hidden="true">v.</span>
           <h3 class="service__title">Irrigation</h3>
-          <p>Installation, repair and smart controllers. Every new automatic system includes a rain sensor.</p>
+          <p>Installation, repair and smart controllers, zoned for the plants each line waters. <a href="#water">How we irrigate</a>.</p>
           <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number (required in all advertising) -->
           <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
           <!-- PLACEHOLDER: confirm irrigation warranty wording -->
@@ -183,7 +183,7 @@
         <li class="service">
           <span class="service__num" aria-hidden="true">vii.</span>
           <h3 class="service__title">Drainage fixes</h3>
-          <p>French drains and grading. North Texas clay swells when wet and takes on water slowly once soaked, so we keep water moving away from the house.</p>
+          <p>French drains and grading, worked out on the site plan before anything is built. <a href="#water">Why clay matters</a>.</p>
         </li>
         <li class="service">
           <span class="service__num" aria-hidden="true">viii.</span>
@@ -270,9 +270,8 @@
         <div class="compare__copy">
           <h3 class="compare__title">Before <em>and</em> after</h3>
           <p>Drag the handle, or focus it and use the arrow keys, to compare a bare yard with a finished one.</p>
-          <p class="compare__label"><span class="tag">Sample</span> Sample: illustrative before and after, not the same yard</p>
-        </div>
-        <figure class="ba" data-ba>
+                  </div>
+        <figure class="ba" data-ba aria-labelledby="ba-note">
           <div class="ba__stage">
             <div class="ba__pane ba__pane--after">
               <img src="../assets/img/after-sample-finished-yard-1400.webp"
@@ -295,7 +294,7 @@
                    data-ba-range>
             <span class="ba__handle" aria-hidden="true"><span class="ba__knob"></span></span>
           </div>
-          <figcaption class="caption">Sample: illustrative before and after, not the same yard. Stock photos of two different yards.</figcaption>
+          <figcaption class="compare__label" id="ba-note">Sample: illustrative before and after, not the same yard. Stock photos of two different yards.</figcaption>
         </figure>
       </div>
     </div>
@@ -665,11 +664,11 @@
       <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number -->
       <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
       <!-- PLACEHOLDER: confirm insurance and years in business -->
-      <p>Insured (Sample)</p>
-      <p>Serving Collin County since 2012 (Sample)</p>
+      <p>Insured <span class="tag">Sample</span></p>
+      <p>Serving Collin County since 2012 <span class="tag">Sample</span></p>
     </div>
     <div class="site-footer__contact">
-      <p><a href="tel:+19725550121">(972) 555-0121</a> (Sample)</p>
+      <p><a href="tel:+19725550121">(972) 555-0121</a> <span class="tag">Sample</span></p>
       <p><a href="mailto:hello@example.com">hello@example.com</a></p>
       <p><a href="#consult">Request a free design consultation</a></p>
     </div>

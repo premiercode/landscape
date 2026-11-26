@@ -289,6 +289,16 @@
    "width": 1200,
    "height": 800,
    "kb": 130
+  },
+  {
+   "file": "native-bluebonnets-golden-light-1600.webp",
+   "width": 1600,
+   "height": 1067
+  },
+  {
+   "file": "native-bluebonnets-golden-light-2400.webp",
+   "width": 2400,
+   "height": 1600
   }
  ],
  "native-little-bluestem-clump": [

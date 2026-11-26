@@ -33,7 +33,7 @@
   --font-body: "Hanken Grotesk", "Helvetica Neue", Arial, system-ui, sans-serif;
 
   --max: 78rem;
-  --max-wide: 90rem;
+  --max-wide: 78rem; /* aligned with --max so every section shares one left edge */
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --section-y: clamp(4.5rem, 8vw, 7.5rem);
 
@@ -219,7 +219,7 @@
     .site-header { background: rgb(11 19 16 / 0.97); }
   }
   .site-header__inner {
-    width: min(100% - 2 * var(--gutter), var(--max-wide)); margin-inline: auto;
+    width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto;
     min-height: var(--header-h);
     display: flex; align-items: center; gap: 1rem;
   }
@@ -439,8 +439,12 @@
     content: ""; position: absolute; inset: 0;
     background: linear-gradient(180deg, transparent 50%, rgb(18 32 25 / 0.85) 100%);
   }
-  .service__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-out), filter 0.8s; filter: saturate(0.92); }
-  .service:hover .service__img img { transform: scale(1.05); filter: saturate(1.05); }
+  /* Shared golden-hour grade so daylight stock sits inside the dusk palette */
+  .service__img img, .gallery__item img, .ba__pane img, .water__photo img {
+    filter: saturate(0.88) sepia(0.14) brightness(0.9) contrast(1.04);
+  }
+  .service__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-out), filter 0.8s; }
+  .service:hover .service__img img { transform: scale(1.05); filter: saturate(1) sepia(0.06) brightness(0.98) contrast(1.04); }
   .service__body { padding: 1.35rem 1.5rem 1.75rem; flex: 1; }
   .service__num { font-family: var(--font-display); font-style: italic; font-size: 0.95rem; color: var(--amber); }
   .service h3 { margin-top: 0.35rem; font-size: 1.6rem; font-weight: 400; letter-spacing: -0.01em; }
@@ -461,7 +465,11 @@
   .gallery { display: grid; gap: 0.75rem; grid-template-columns: repeat(2, 1fr); }
   .gallery__item--feature { grid-column: 1 / -1; }
   @media (max-width: 639px) {
-    .gallery__item:not(.gallery__item--feature) figcaption { padding: 2rem 0.7rem 0.6rem; font-size: 0.8rem; line-height: 1.3; }
+    /* small tiles: caption sits below the photo instead of covering it */
+    .gallery__item:not(.gallery__item--feature) { aspect-ratio: auto; background: none; overflow: visible; border-radius: 0; }
+    .gallery__item:not(.gallery__item--feature) img { aspect-ratio: 4 / 3; height: auto; border-radius: var(--radius-lg); }
+    .gallery__item:not(.gallery__item--feature)::after { display: none; }
+    .gallery__item:not(.gallery__item--feature) figcaption { position: static; padding: 0.5rem 0.1rem 0.25rem; background: none; font-size: 0.82rem; line-height: 1.35; color: var(--cream-2); }
     .gallery__item:not(.gallery__item--feature) .gallery__kicker { display: none; }
   }
   @media (min-width: 640px) { .gallery { gap: 1rem; } }
@@ -478,6 +486,12 @@
     .gallery__item--feature { aspect-ratio: auto; }
   }
   .gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.6s var(--ease-out); }
+  .gallery__item::after {
+    /* warm low-sun wash from the top corner */
+    content: ""; position: absolute; inset: 0; pointer-events: none; mix-blend-mode: soft-light;
+    background: linear-gradient(200deg, rgb(240 170 80 / 0.35), transparent 55%);
+  }
+  .gallery__item figcaption { z-index: 1; }
   .gallery__item:hover img { transform: scale(1.04); }
   .gallery__item figcaption {
     position: absolute; inset: auto 0 0 0;
@@ -517,7 +531,18 @@
   .ba__handle, .ba__range { display: none; }
 
   /* JS: overlay slider */
-  .js .ba { display: block; aspect-ratio: 3 / 2; border-radius: var(--radius-lg); overflow: hidden; --pos: 50%; box-shadow: 0 40px 80px -40px rgb(0 0 0 / 0.8); }
+  .ba-frame {
+    padding: clamp(0.5rem, 1vw, 0.85rem);
+    border-radius: calc(var(--radius-lg) + 0.6rem);
+    background: linear-gradient(160deg, #2a2316, #141a14 55%, #0d130f);
+    border: 1px solid rgb(240 180 90 / 0.28);
+    box-shadow: 0 50px 100px -40px rgb(0 0 0 / 0.9), 0 0 80px -30px rgb(240 160 70 / 0.25);
+  }
+  .js .ba { display: block; aspect-ratio: 3 / 2; border-radius: var(--radius-lg); overflow: hidden; --pos: 50%; }
+  .js .ba::after {
+    content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; border-radius: inherit;
+    box-shadow: inset 0 0 90px rgb(8 14 11 / 0.55);
+  }
   .js .ba__pane { position: absolute; inset: 0; border-radius: 0; aspect-ratio: auto; }
   .js .ba__pane--before { z-index: 2; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
   .js .ba__pane--after { z-index: 1; }
@@ -595,7 +620,7 @@
   /* ===== Plans ===== */
   .plans { background: linear-gradient(180deg, var(--ink-2), var(--forest) 60%, var(--forest)); }
   .tiers { display: grid; gap: 1.25rem; align-items: stretch; }
-  @media (min-width: 900px) { .tiers { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: center; } }
+  @media (min-width: 900px) { .tiers { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; padding-block: 1rem; } }
   .tier {
     position: relative; display: flex; flex-direction: column;
     padding: 2.25rem 2rem 2rem;
@@ -607,7 +632,7 @@
     border-color: rgb(240 180 90 / 0.7);
     box-shadow: 0 40px 90px -40px rgb(240 160 70 / 0.35), inset 0 1px 0 rgb(246 201 127 / 0.35);
   }
-  @media (min-width: 900px) { .tier--featured { padding-block: 3rem 2.5rem; } }
+  @media (min-width: 900px) { .tier--featured { margin-block: -1rem; padding-block: 3rem 3.25rem; } }
   .tier__badge {
     position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%);
     padding: 0.45rem 1rem; border-radius: 999px;
@@ -635,25 +660,28 @@
     margin-top: clamp(3rem, 6vw, 5rem); padding-top: 2.5rem; border-top: 1px solid var(--line);
     display: grid; gap: 1.5rem;
   }
-  @media (min-width: 1000px) { .starts { grid-template-columns: 13rem 1fr; column-gap: 3rem; } }
+  @media (min-width: 1000px) { .starts { grid-template-columns: 12rem 1fr; column-gap: 2.5rem; } }
   .starts__title { font-size: 1.5rem; font-weight: 350; }
   .starts__title .tag { margin-left: 0.25rem; }
-  .starts__list { display: grid; gap: 1rem 2rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
+  .starts__list { display: grid; gap: 1rem 1.5rem; grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); }
   .starts__list div { border-left: 1px solid rgb(240 180 90 / 0.5); padding-left: 1rem; }
   .starts__list dt { font-size: 0.85rem; color: var(--cream-2); }
-  .starts__list dd { font-family: var(--font-display); font-size: 1.35rem; margin-top: 0.15rem; }
+  .starts__list dd { font-family: var(--font-display); font-size: 1.25rem; margin-top: 0.15rem; white-space: nowrap; }
   .starts__note { grid-column: 1 / -1; font-size: 0.9rem; color: var(--cream-2); }
   @media (min-width: 1000px) { .starts__note { grid-column: 2; } }
 
   /* ===== Water-wise ===== */
   .water { background: var(--forest); }
   .water__grid { display: grid; gap: clamp(3rem, 6vw, 5rem); }
-  @media (min-width: 1000px) { .water__grid { grid-template-columns: 1fr 1fr; align-items: start; } }
-  @media (min-width: 1000px) { .water__intro { position: sticky; top: calc(var(--header-h) + 2rem); } }
+  @media (min-width: 1000px) {
+    .water__grid { grid-template-columns: 1fr 1fr; align-items: start; column-gap: clamp(3rem, 5vw, 5rem); row-gap: 1.5rem; }
+    .water__grid > .irrigation { grid-column: 1 / -1; }
+  }
   .water__intro .section-lede { margin-top: 1.5rem; }
   .water__photos { margin-top: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
-  .water__photo img { border-radius: var(--radius-lg); aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
+  .water__photo img { border-radius: var(--radius-lg); aspect-ratio: 3 / 4; width: 100%; object-fit: cover; }
   .water__photo--b { margin-top: 3rem; }
+  @media (min-width: 1000px) { .water__photo--b { margin-top: 6rem; } }
   .water__photo figcaption { margin-top: 0.65rem; font-size: 0.78rem; line-height: 1.45; color: var(--cream-3); }
   .water__photo figcaption a { color: var(--cream-2); }
 
@@ -662,7 +690,7 @@
     border: 1px solid var(--line); border-radius: var(--radius-lg);
     background: rgb(11 19 16 / 0.42);
   }
-  .irrigation { margin-top: 1.5rem; background: linear-gradient(160deg, rgb(240 180 90 / 0.07), rgb(11 19 16 / 0.42) 60%); }
+  .irrigation { background: linear-gradient(160deg, rgb(240 180 90 / 0.07), rgb(11 19 16 / 0.42) 60%); }
   .plants__title, .irrigation__title { font-size: 1.75rem; font-weight: 350; }
   .plants__sub { margin-top: 0.35rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); }
   .plants__list { margin-top: 1.5rem; }
@@ -678,7 +706,8 @@
   .plants__bot { font-family: var(--font-display); font-size: 0.95rem; color: var(--amber-hi); }
   .plants__list i { font-family: var(--font-display); font-size: 0.95rem; color: var(--amber-hi); }
   .plants__note { font-size: 0.88rem; color: var(--cream-2); }
-  .irrigation__list { margin-top: 1.25rem; display: grid; gap: 0.9rem; }
+  .irrigation__list { margin-top: 1.25rem; display: grid; gap: 0.9rem 3rem; }
+  @media (min-width: 900px) { .irrigation__list { grid-template-columns: 1fr 1fr; } }
   .irrigation__list li { position: relative; padding-left: 1.6rem; color: var(--cream-2); }
   .irrigation__list li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 10px var(--amber); }
 
@@ -692,17 +721,20 @@
   .reviews__scrim {
     position: absolute; inset: 0; z-index: -1;
     background:
-      linear-gradient(180deg, var(--forest) 0%, rgb(11 19 16 / 0.5) 22%, rgb(11 19 16 / 0.62) 78%, var(--ink) 100%),
+      radial-gradient(ellipse 50% 22% at 50% 20%, rgb(11 19 16 / 0.55), transparent 100%),
+      linear-gradient(180deg, var(--forest) 0%, rgb(11 19 16 / 0.32) 22%, rgb(11 19 16 / 0.45) 78%, var(--ink) 100%),
       radial-gradient(ellipse at 70% 30%, rgb(240 160 70 / 0.12), transparent 60%);
   }
   .reviews__inner { position: relative; }
+  .reviews .section-head { text-shadow: 0 2px 24px rgb(0 0 0 / 0.7); }
+  .reviews .section-title { color: #fbf5e8; }
   .quotes { display: grid; gap: 1.25rem; }
   @media (min-width: 900px) { .quotes { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
   .quote {
     display: flex; flex-direction: column;
     padding: 2rem 1.85rem;
     border: 1px solid rgb(244 236 220 / 0.16); border-radius: var(--radius-lg);
-    background: rgb(11 19 16 / 0.6);
+    background: rgb(11 19 16 / 0.72);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
