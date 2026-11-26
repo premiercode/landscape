@@ -1,0 +1,520 @@
+{
+ "after-sample-finished-yard": [
+  {
+   "file": "after-sample-finished-yard-800.webp",
+   "width": 800,
+   "height": 533,
+   "kb": 56
+  },
+  {
+   "file": "after-sample-finished-yard-1400.webp",
+   "width": 1400,
+   "height": 933,
+   "kb": 165
+  },
+  {
+   "file": "after-sample-finished-yard-2000.webp",
+   "width": 2000,
+   "height": 1333,
+   "kb": 313
+  }
+ ],
+ "before-sample-bare-yard": [
+  {
+   "file": "before-sample-bare-yard-800.webp",
+   "width": 800,
+   "height": 533,
+   "kb": 73
+  },
+  {
+   "file": "before-sample-bare-yard-1400.webp",
+   "width": 1400,
+   "height": 933,
+   "kb": 213
+  },
+  {
+   "file": "before-sample-bare-yard-2000.webp",
+   "width": 2000,
+   "height": 1333,
+   "kb": 393
+  }
+ ],
+ "gallery-backyard-pond-pavilion": [
+  {
+   "file": "gallery-backyard-pond-pavilion-800.webp",
+   "width": 800,
+   "height": 534,
+   "kb": 59
+  },
+  {
+   "file": "gallery-backyard-pond-pavilion-1400.webp",
+   "width": 1400,
+   "height": 934,
+   "kb": 156
+  },
+  {
+   "file": "gallery-backyard-pond-pavilion-2000.webp",
+   "width": 2000,
+   "height": 1334,
+   "kb": 280
+  }
+ ],
+ "gallery-brick-stone-home-front-lawn": [
+  {
+   "file": "gallery-brick-stone-home-front-lawn-800.webp",
+   "width": 800,
+   "height": 464,
+   "kb": 53
+  },
+  {
+   "file": "gallery-brick-stone-home-front-lawn-1400.webp",
+   "width": 1400,
+   "height": 813,
+   "kb": 157
+  },
+  {
+   "file": "gallery-brick-stone-home-front-lawn-2000.webp",
+   "width": 2000,
+   "height": 1161,
+   "kb": 280
+  }
+ ],
+ "gallery-fire-pit-patio-gravel-beds": [
+  {
+   "file": "gallery-fire-pit-patio-gravel-beds-800.webp",
+   "width": 800,
+   "height": 600,
+   "kb": 130
+  },
+  {
+   "file": "gallery-fire-pit-patio-gravel-beds-1400.webp",
+   "width": 1400,
+   "height": 1050,
+   "kb": 335
+  },
+  {
+   "file": "gallery-fire-pit-patio-gravel-beds-2000.webp",
+   "width": 2000,
+   "height": 1500,
+   "kb": 536
+  }
+ ],
+ "gallery-flagstone-pool-terrace": [
+  {
+   "file": "gallery-flagstone-pool-terrace-800.webp",
+   "width": 800,
+   "height": 533,
+   "kb": 79
+  },
+  {
+   "file": "gallery-flagstone-pool-terrace-1400.webp",
+   "width": 1400,
+   "height": 933,
+   "kb": 215
+  },
+  {
+   "file": "gallery-flagstone-pool-terrace-2000.webp",
+   "width": 2000,
+   "height": 1333,
+   "kb": 390
+  }
+ ],
+ "gallery-front-yard-striped-lawn": [
+  {
+   "file": "gallery-front-yard-striped-lawn-800.webp",
+   "width": 800,
+   "height": 530,
+   "kb": 50
+  },
+  {
+   "file": "gallery-front-yard-striped-lawn-1400.webp",
+   "width": 1400,
+   "height": 927,
+   "kb": 128
+  },
+  {
+   "file": "gallery-front-yard-striped-lawn-2000.webp",
+   "width": 2000,
+   "height": 1324,
+   "kb": 210
+  }
+ ],
+ "gallery-gravel-fire-circles-lawn": [
+  {
+   "file": "gallery-gravel-fire-circles-lawn-800.webp",
+   "width": 800,
+   "height": 533,
+   "kb": 80
+  },
+  {
+   "file": "gallery-gravel-fire-circles-lawn-1400.webp",
+   "width": 1400,
+   "height": 933,
+   "kb": 315
+  },
+  {
+   "file": "gallery-gravel-fire-circles-lawn-2000.webp",
+   "width": 2000,
+   "height": 1333,
+   "kb": 675
+  }
+ ],
+ "gallery-gravel-patio-garden": [
+  {
+   "file": "gallery-gravel-patio-garden-800.webp",
+   "width": 800,
+   "height": 533,
+   "kb": 109
+  },
+  {
+   "file": "gallery-gravel-patio-garden-1400.webp",
+   "width": 1400,
+   "height": 933,
+   "kb": 301
+  },
+  {
+   "file": "gallery-gravel-patio-garden-2000.webp",
+   "width": 2000,
+   "height": 1333,
+   "kb": 535
+  }
+ ],
+ "gallery-modern-pool-courtyard-lawn": [
+  {
+   "file": "gallery-modern-pool-courtyard-lawn-800.webp",
+   "width": 800,
+   "height": 533,
+   "kb": 53
+  },
+  {
+   "file": "gallery-modern-pool-courtyard-lawn-1400.webp",
+   "width": 1400,
+   "height": 933,
+   "kb": 159
+  },
+  {
+   "file": "gallery-modern-pool-courtyard-lawn-2000.webp",
+   "width": 2000,
+   "height": 1333,
+   "kb": 310
+  }
+ ],
+ "hero-pool-lawn-golden-hour-03": [
+  {
+   "file": "hero-pool-lawn-golden-hour-03-960.webp",
+   "width": 960,
+   "height": 640,
+   "kb": 104
+  },
+  {
+   "file": "hero-pool-lawn-golden-hour-03-1600.webp",
+   "width": 1600,
+   "height": 1067,
+   "kb": 265
+  },
+  {
+   "file": "hero-pool-lawn-golden-hour-03-2400.webp",
+   "width": 2400,
+   "height": 1600,
+   "kb": 519
+  },
+  {
+   "file": "hero-pool-lawn-golden-hour-03-3200.webp",
+   "width": 3200,
+   "height": 2134,
+   "kb": 807
+  }
+ ],
+ "hero-pool-patio-dusk-01": [
+  {
+   "file": "hero-pool-patio-dusk-01-960.webp",
+   "width": 960,
+   "height": 640,
+   "kb": 71
+  },
+  {
+   "file": "hero-pool-patio-dusk-01-1600.webp",
+   "width": 1600,
+   "height": 1067,
+   "kb": 167
+  },
+  {
+   "file": "hero-pool-patio-dusk-01-2400.webp",
+   "width": 2400,
+   "height": 1600,
+   "kb": 316
+  },
+  {
+   "file": "hero-pool-patio-dusk-01-3200.webp",
+   "width": 3200,
+   "height": 2134,
+   "kb": 503
+  }
+ ],
+ "hero-string-lights-patio-evening-02": [
+  {
+   "file": "hero-string-lights-patio-evening-02-960.webp",
+   "width": 960,
+   "height": 640,
+   "kb": 34
+  },
+  {
+   "file": "hero-string-lights-patio-evening-02-1600.webp",
+   "width": 1600,
+   "height": 1066,
+   "kb": 65
+  },
+  {
+   "file": "hero-string-lights-patio-evening-02-2400.webp",
+   "width": 2400,
+   "height": 1600,
+   "kb": 109
+  },
+  {
+   "file": "hero-string-lights-patio-evening-02-3200.webp",
+   "width": 3200,
+   "height": 2133,
+   "kb": 165
+  }
+ ],
+ "native-bluebonnets-golden-light": [
+  {
+   "file": "native-bluebonnets-golden-light-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 58
+  },
+  {
+   "file": "native-bluebonnets-golden-light-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 130
+  }
+ ],
+ "native-little-bluestem-clump": [
+  {
+   "file": "native-little-bluestem-clump-640.webp",
+   "width": 640,
+   "height": 433,
+   "kb": 112
+  },
+  {
+   "file": "native-little-bluestem-clump-1200.webp",
+   "width": 1200,
+   "height": 812,
+   "kb": 375
+  }
+ ],
+ "native-salvia-greggii-autumn-sage": [
+  {
+   "file": "native-salvia-greggii-autumn-sage-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 134
+  },
+  {
+   "file": "native-salvia-greggii-autumn-sage-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 450
+  }
+ ],
+ "service-design-garden-plan-drawing": [
+  {
+   "file": "service-design-garden-plan-drawing-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 21
+  },
+  {
+   "file": "service-design-garden-plan-drawing-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 44
+  }
+ ],
+ "service-drainage-rock-trench": [
+  {
+   "file": "service-drainage-rock-trench-640.webp",
+   "width": 640,
+   "height": 424,
+   "kb": 80
+  },
+  {
+   "file": "service-drainage-rock-trench-1200.webp",
+   "width": 1200,
+   "height": 794,
+   "kb": 255
+  }
+ ],
+ "service-fire-pit-stone-ring": [
+  {
+   "file": "service-fire-pit-stone-ring-640.webp",
+   "width": 640,
+   "height": 480,
+   "kb": 60
+  },
+  {
+   "file": "service-fire-pit-stone-ring-1200.webp",
+   "width": 1200,
+   "height": 900,
+   "kb": 160
+  }
+ ],
+ "service-flagstone-path-lawn": [
+  {
+   "file": "service-flagstone-path-lawn-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 76
+  },
+  {
+   "file": "service-flagstone-path-lawn-1200.webp",
+   "width": 1200,
+   "height": 801,
+   "kb": 243
+  }
+ ],
+ "service-hardscape-stone-patio": [
+  {
+   "file": "service-hardscape-stone-patio-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 58
+  },
+  {
+   "file": "service-hardscape-stone-patio-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 173
+  }
+ ],
+ "service-irrigation-drip-line": [
+  {
+   "file": "service-irrigation-drip-line-640.webp",
+   "width": 640,
+   "height": 360,
+   "kb": 52
+  },
+  {
+   "file": "service-irrigation-drip-line-1200.webp",
+   "width": 1200,
+   "height": 675,
+   "kb": 133
+  }
+ ],
+ "service-irrigation-sprinklers-golden-light": [
+  {
+   "file": "service-irrigation-sprinklers-golden-light-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 51
+  },
+  {
+   "file": "service-irrigation-sprinklers-golden-light-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 163
+  }
+ ],
+ "service-landscape-lighting-path-light": [
+  {
+   "file": "service-landscape-lighting-path-light-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 24
+  },
+  {
+   "file": "service-landscape-lighting-path-light-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 58
+  }
+ ],
+ "service-lawn-striped-backyard": [
+  {
+   "file": "service-lawn-striped-backyard-640.webp",
+   "width": 640,
+   "height": 480,
+   "kb": 89
+  },
+  {
+   "file": "service-lawn-striped-backyard-1200.webp",
+   "width": 1200,
+   "height": 900,
+   "kb": 322
+  }
+ ],
+ "service-outdoor-kitchen-covered-patio": [
+  {
+   "file": "service-outdoor-kitchen-covered-patio-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 16
+  },
+  {
+   "file": "service-outdoor-kitchen-covered-patio-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 43
+  }
+ ],
+ "service-pergola-modern-patio": [
+  {
+   "file": "service-pergola-modern-patio-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 42
+  },
+  {
+   "file": "service-pergola-modern-patio-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 145
+  }
+ ],
+ "service-planting-beds-lawn": [
+  {
+   "file": "service-planting-beds-lawn-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 87
+  },
+  {
+   "file": "service-planting-beds-lawn-1200.webp",
+   "width": 1200,
+   "height": 801,
+   "kb": 287
+  }
+ ],
+ "service-retaining-wall-stone": [
+  {
+   "file": "service-retaining-wall-stone-640.webp",
+   "width": 640,
+   "height": 427,
+   "kb": 35
+  },
+  {
+   "file": "service-retaining-wall-stone-1200.webp",
+   "width": 1200,
+   "height": 800,
+   "kb": 92
+  }
+ ],
+ "texture-cedar-tone-wood-boards": [
+  {
+   "file": "texture-cedar-tone-wood-boards-1200.webp",
+   "width": 1200,
+   "height": 770,
+   "kb": 36
+  }
+ ],
+ "texture-limestone-sawn-block": [
+  {
+   "file": "texture-limestone-sawn-block-1200.webp",
+   "width": 1200,
+   "height": 900,
+   "kb": 361
+  }
+ ]
+}
