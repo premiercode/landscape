@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<!--
+  PITCH NOTE (Option B, Garden journal): an airy, editorial homepage that reads like a well-edited
+  garden magazine, with hand-drawn botanical line work, a sage and cream palette and the project
+  gallery as the centerpiece.
+  Look first at: the framed hero video (pause/play, "Watch the full clip"), then scroll to section 02,
+  the asymmetric project spread and the before-and-after slider.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Prairie Ember Landscape Co. | Landscape design and build in McKinney, TX</title>
+  <meta name="description" content="Prairie Ember Landscape Co. designs, builds and maintains residential landscapes in McKinney and nearby cities. Start with a free on-site design consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- Botanical line-work sprite (hand-drawn style, decorative only) -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="b-sprig" viewBox="0 0 120 240">
+    <path pathLength="1" d="M60 238 C57 196 66 150 62 104 C59 70 62 40 67 8"/>
+    <path pathLength="1" d="M61 196 C44 192 28 180 20 158 C40 158 55 172 61 196 Z"/>
+    <path pathLength="1" d="M61 196 C47 184 34 172 26 162"/>
+    <path pathLength="1" d="M63 164 C80 160 96 146 104 124 C84 124 69 140 63 164 Z"/>
+    <path pathLength="1" d="M63 164 C77 152 90 138 98 130"/>
+    <path pathLength="1" d="M62 122 C46 118 33 104 28 84 C46 86 58 100 62 122 Z"/>
+    <path pathLength="1" d="M63 90 C78 86 90 72 94 54 C78 56 66 70 63 90 Z"/>
+    <path pathLength="1" d="M65 46 C56 40 52 28 54 16 C64 22 67 34 65 46 Z"/>
+  </symbol>
+  <symbol id="b-grass" viewBox="0 0 220 120">
+    <path pathLength="1" d="M18 118 C22 86 30 56 46 22"/>
+    <path pathLength="1" d="M34 118 C34 88 28 62 14 40"/>
+    <path pathLength="1" d="M52 118 C56 80 70 50 92 30"/>
+    <path pathLength="1" d="M70 118 C68 84 60 58 48 6"/>
+    <path pathLength="1" d="M92 118 C98 92 112 70 136 56"/>
+    <path pathLength="1" d="M112 118 C110 90 116 54 128 14"/>
+    <path pathLength="1" d="M130 118 C128 98 118 80 100 66"/>
+    <path pathLength="1" d="M150 118 C156 86 170 62 196 46"/>
+    <path pathLength="1" d="M170 118 C168 90 160 70 146 50"/>
+    <path pathLength="1" d="M190 118 C194 100 204 86 216 78"/>
+    <path pathLength="1" d="M128 14 C124 22 126 30 130 36 M128 14 C134 20 134 28 131 36"/>
+  </symbol>
+  <symbol id="b-fern" viewBox="0 0 260 80">
+    <path pathLength="1" d="M4 60 C60 52 130 46 256 30"/>
+    <path pathLength="1" d="M40 55 C44 42 52 34 64 30 M40 55 C48 62 58 66 70 66"/>
+    <path pathLength="1" d="M86 50 C90 36 100 28 112 24 M86 50 C94 58 106 62 118 62"/>
+    <path pathLength="1" d="M134 45 C138 32 148 24 160 20 M134 45 C142 52 154 56 166 56"/>
+    <path pathLength="1" d="M182 39 C186 28 194 22 204 18 M182 39 C190 46 200 48 210 48"/>
+    <path pathLength="1" d="M226 34 C230 26 236 22 244 20"/>
+  </symbol>
+</svg>
+
+<div class="preview-bar" role="note">
+  <p><strong>Design preview.</strong> Prairie Ember Landscape Co. is a fictional company. Prices, reviews, license numbers and contact details are samples, not real data.</p>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="wordmark" href="#top" aria-label="Prairie Ember Landscape Co., back to top">
+      <span class="wordmark__name">Prairie Ember</span>
+      <span class="wordmark__sub">Landscape Co.</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#care">Care plans</a></li>
+        <li><a href="#water">Water-wise</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--header" href="#consult">Request a free design consultation</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="kicker"><span class="kicker__rule" aria-hidden="true"></span>Landscape design and build, McKinney, TX</p>
+        <h1 class="hero__title" id="hero-title">Every good garden <em>starts as a drawing.</em></h1>
+        <p class="hero__lede">Prairie Ember designs, builds and looks after residential landscapes in McKinney and the cities around it: planting, patios, outdoor rooms, and the irrigation and lighting that hold it all together.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#consult">Request a free design consultation</a>
+          <a class="btn btn--link" href="#projects">See the project gallery <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <!-- PLACEHOLDER: confirm consultation terms (free, length on site, follow-up timing) -->
+        <p class="hero__note"><span class="tag">Sample</span> Free, about 60 minutes on site; concept follow-up within two weeks.</p>
+      </div>
+
+      <figure class="hero__media">
+        <svg class="botanic botanic--hero" data-draw aria-hidden="true" focusable="false"><use href="#b-sprig"/></svg>
+        <div class="hero__frame">
+          <video class="hero__video" muted loop playsinline preload="none"
+                 poster="../assets/video/backyard-pan-poster-1920.webp"
+                 width="1280" height="720"
+                 aria-label="A slow pan across a lawn and covered patio (stock footage, no sound)">
+            <source src="../assets/video/backyard-pan-1280.mp4" type="video/mp4">
+          </video>
+          <button class="video-toggle" type="button" aria-label="Pause background video" data-video-toggle>
+            <svg class="video-toggle__icon video-toggle__icon--pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14M16 5v14"/></svg>
+            <svg class="video-toggle__icon video-toggle__icon--play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+        </div>
+        <figcaption class="caption hero__caption">
+          <span class="hero__caption-text"><span class="caption__fig">Fig. 1</span> A slow pan across a lawn and covered patio. Stock footage, silent.</span>
+          <button class="btn btn--quiet hero__clip" type="button" data-clip-open>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
+            Watch the full clip
+          </button>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 01 SERVICES -->
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="container services__grid">
+      <div class="services__intro">
+        <p class="section-num"><span>01</span> Services</p>
+        <h2 class="section-title" id="services-title">One studio, from <em>site plan</em> to Saturday morning.</h2>
+        <p class="section-lede">We draw the plan, build what's on it and keep it looking the way it was drawn. Eight things we do, and do often.</p>
+        <figure class="services__plate">
+          <img src="../assets/img/service-design-garden-plan-drawing-640.webp"
+               srcset="../assets/img/service-design-garden-plan-drawing-640.webp 640w, ../assets/img/service-design-garden-plan-drawing-1200.webp 1200w"
+               sizes="(min-width: 1000px) 400px, 100vw"
+               width="1200" height="800" loading="lazy"
+               alt="Hand-colored landscape planting plan with tree and shrub symbols">
+          <figcaption class="caption"><span class="caption__fig">Fig. 2</span> A hand-colored planting plan, the kind of drawing every project starts from.</figcaption>
+        </figure>
+      </div>
+
+      <ol class="service-list" role="list">
+        <li class="service">
+          <span class="service__num" aria-hidden="true">i.</span>
+          <h3 class="service__title">Landscape design</h3>
+          <p>A measured site plan from a landscape designer: beds, paths, trees, and where the sun and water go.</p>
+          <!-- PLACEHOLDER: confirm design fee policy and range ($1,500 to $4,500 sample) -->
+          <p class="service__meta"><span class="tag">Sample</span> Design fee credited toward your build.</p>
+        </li>
+        <li class="service">
+          <span class="service__num" aria-hidden="true">ii.</span>
+          <h3 class="service__title">Installation</h3>
+          <p>Beds, sod, trees, shrubs and seasonal color, planted into amended soil.</p>
+          <!-- PLACEHOLDER: confirm plant warranty terms -->
+          <p class="service__meta"><span class="tag">Sample</span> 1-year limited warranty on trees and shrubs we install: one replacement, seasonal color excluded.</p>
+        </li>
+        <li class="service">
+          <span class="service__num" aria-hidden="true">iii.</span>
+          <h3 class="service__title">Hardscapes</h3>
+          <p>Patios, flagstone paths and retaining walls. Many North Texas HOAs require architectural approval for these, so we prepare drawings for your HOA submittal.</p>
+        </li>
+        <li class="service">
+          <span class="service__num" aria-hidden="true">iv.</span>
+          <h3 class="service__title">Outdoor living</h3>
+          <p>Pergolas, fire pits and outdoor kitchens, placed where you'll actually sit.</p>
+        </li>
+        <li class="service service--irrigation">
+          <span class="service__num" aria-hidden="true">v.</span>
+          <h3 class="service__title">Irrigation</h3>
+          <p>Installation, repair and smart controllers. Every new automatic system includes a rain sensor.</p>
+          <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number (required in all advertising) -->
+          <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
+          <!-- PLACEHOLDER: confirm irrigation warranty wording -->
+          <p class="service__meta"><span class="tag">Sample</span> Written warranty on every new irrigation system.</p>
+        </li>
+        <li class="service">
+          <span class="service__num" aria-hidden="true">vi.</span>
+          <h3 class="service__title">Low-voltage landscape lighting</h3>
+          <p>Path, bed and tree lighting so the garden still reads after dark.</p>
+        </li>
+        <li class="service">
+          <span class="service__num" aria-hidden="true">vii.</span>
+          <h3 class="service__title">Drainage fixes</h3>
+          <p>French drains and grading. North Texas clay swells when wet and takes on water slowly once soaked, so we keep water moving away from the house.</p>
+        </li>
+        <li class="service">
+          <span class="service__num" aria-hidden="true">viii.</span>
+          <h3 class="service__title">Weekly maintenance</h3>
+          <p>Mowing, edging, bed care and seasonal fertilizing on a weekly plan. <a href="#care">See the care plans</a>.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 02 PROJECTS (centerpiece) -->
+  <section class="section projects" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <header class="projects__head">
+        <p class="section-num"><span>02</span> Featured projects</p>
+        <h2 class="section-title section-title--xl" id="projects-title">Gardens for <em>sitting in,</em> not just looking at.</h2>
+        <svg class="botanic botanic--fern" data-draw aria-hidden="true" focusable="false"><use href="#b-fern"/></svg>
+      </header>
+
+      <div class="spread">
+        <figure class="plate plate--a reveal">
+          <div class="plate__img">
+            <img src="../assets/img/gallery-backyard-pond-pavilion-1400.webp"
+                 srcset="../assets/img/gallery-backyard-pond-pavilion-800.webp 800w, ../assets/img/gallery-backyard-pond-pavilion-1400.webp 1400w, ../assets/img/gallery-backyard-pond-pavilion-2000.webp 2000w"
+                 sizes="(min-width: 1400px) 820px, (min-width: 900px) 62vw, 100vw"
+                 width="1400" height="934" loading="lazy"
+                 alt="Backyard with a rock-edged pond, ornamental grasses and a wooden pavilion">
+          </div>
+          <figcaption class="caption"><span class="caption__fig">Fig. 3</span> Water, grasses and shade: a rock-edged pond below a timber pavilion.</figcaption>
+        </figure>
+
+        <figure class="plate plate--b reveal">
+          <div class="plate__img">
+            <img src="../assets/img/gallery-modern-pool-courtyard-lawn-800.webp"
+                 srcset="../assets/img/gallery-modern-pool-courtyard-lawn-800.webp 800w, ../assets/img/gallery-modern-pool-courtyard-lawn-1400.webp 1400w"
+                 sizes="(min-width: 1400px) 440px, (min-width: 900px) 34vw, 100vw"
+                 width="800" height="533" loading="lazy"
+                 alt="Modern courtyard with a clipped lawn panel under deep roof overhangs">
+          </div>
+          <figcaption class="caption"><span class="caption__fig">Fig. 4</span> A single lawn panel holds a modern courtyard together.</figcaption>
+        </figure>
+
+        <figure class="plate plate--c reveal">
+          <div class="plate__img">
+            <img src="../assets/img/gallery-gravel-patio-garden-800.webp"
+                 srcset="../assets/img/gallery-gravel-patio-garden-800.webp 800w, ../assets/img/gallery-gravel-patio-garden-1400.webp 1400w"
+                 sizes="(min-width: 1400px) 500px, (min-width: 900px) 40vw, 100vw"
+                 width="800" height="533" loading="lazy"
+                 alt="Gravel patio with a white outdoor sofa, bistro table and a wooden planter box beside a white farmhouse">
+          </div>
+          <figcaption class="caption"><span class="caption__fig">Fig. 5</span> Gravel, a planter box and a sofa: a side yard becomes a sitting room.</figcaption>
+        </figure>
+
+        <figure class="plate plate--d reveal">
+          <div class="plate__img">
+            <img src="../assets/img/gallery-gravel-fire-circles-lawn-1400.webp"
+                 srcset="../assets/img/gallery-gravel-fire-circles-lawn-800.webp 800w, ../assets/img/gallery-gravel-fire-circles-lawn-1400.webp 1400w, ../assets/img/gallery-gravel-fire-circles-lawn-2000.webp 2000w"
+                 sizes="(min-width: 1400px) 760px, (min-width: 900px) 58vw, 100vw"
+                 width="1400" height="933" loading="lazy"
+                 alt="Two round gravel seating areas with fire bowls set into a large lawn">
+          </div>
+          <figcaption class="caption"><span class="caption__fig">Fig. 6</span> Two gravel circles with fire bowls, set loose in a wide lawn.</figcaption>
+        </figure>
+
+        <aside class="spread__note reveal" aria-label="How we read a yard">
+          <svg class="botanic botanic--grass" data-draw aria-hidden="true" focusable="false"><use href="#b-grass"/></svg>
+          <p class="pull">&ldquo;Where will you sit in October? Where does the water go in May? A good plan answers both before anything is built.&rdquo;</p>
+        </aside>
+
+        <figure class="plate plate--e reveal">
+          <div class="plate__img">
+            <img src="../assets/img/gallery-flagstone-pool-terrace-1400.webp"
+                 srcset="../assets/img/gallery-flagstone-pool-terrace-800.webp 800w, ../assets/img/gallery-flagstone-pool-terrace-1400.webp 1400w, ../assets/img/gallery-flagstone-pool-terrace-2000.webp 2000w"
+                 sizes="(min-width: 1400px) 840px, (min-width: 900px) 66vw, 100vw"
+                 width="1400" height="933" loading="lazy"
+                 alt="Flagstone terrace with loungers, umbrellas and flowering borders">
+          </div>
+          <figcaption class="caption"><span class="caption__fig">Fig. 7</span> Flagstone paving softened by flowering borders.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Before and after -->
+      <div class="compare">
+        <div class="compare__copy">
+          <h3 class="compare__title">Before <em>and</em> after</h3>
+          <p>Drag the handle, or focus it and use the arrow keys, to compare a bare yard with a finished one.</p>
+          <p class="compare__label"><span class="tag">Sample</span> Sample: illustrative before and after, not the same yard</p>
+        </div>
+        <figure class="ba" data-ba>
+          <div class="ba__stage">
+            <div class="ba__pane ba__pane--after">
+              <img src="../assets/img/after-sample-finished-yard-1400.webp"
+                   srcset="../assets/img/after-sample-finished-yard-800.webp 800w, ../assets/img/after-sample-finished-yard-1400.webp 1400w, ../assets/img/after-sample-finished-yard-2000.webp 2000w"
+                   sizes="(min-width: 1400px) 820px, (min-width: 900px) 62vw, 100vw"
+                   width="1400" height="933" loading="lazy"
+                   alt="After (sample): fenced backyard with a new lawn, light stone patio, planting beds and a metal pergola">
+              <span class="ba__tag ba__tag--after">After, sample</span>
+            </div>
+            <div class="ba__pane ba__pane--before">
+              <img src="../assets/img/before-sample-bare-yard-1400.webp"
+                   srcset="../assets/img/before-sample-bare-yard-800.webp 800w, ../assets/img/before-sample-bare-yard-1400.webp 1400w, ../assets/img/before-sample-bare-yard-2000.webp 2000w"
+                   sizes="(min-width: 1400px) 820px, (min-width: 900px) 62vw, 100vw"
+                   width="1400" height="933" loading="lazy"
+                   alt="Before (sample): bare fenced backyard with patchy dry grass">
+              <span class="ba__tag ba__tag--before">Before, sample</span>
+            </div>
+            <input class="ba__range" type="range" min="0" max="100" value="50" step="1"
+                   aria-label="Before and after comparison. Higher values show more of the before image."
+                   data-ba-range>
+            <span class="ba__handle" aria-hidden="true"><span class="ba__knob"></span></span>
+          </div>
+          <figcaption class="caption">Sample: illustrative before and after, not the same yard. Stock photos of two different yards.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 PROCESS -->
+  <section class="section process" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <p class="section-num"><span>03</span> Our process</p>
+      <h2 class="section-title" id="process-title">Four stages, <em>like anything that grows.</em></h2>
+
+      <!-- PLACEHOLDER: confirm process durations (all sample) -->
+      <ol class="stages" role="list" data-draw>
+        <li class="stage">
+          <svg class="stage__glyph" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M8 66 C24 62 56 62 72 66"/>
+            <path pathLength="1" d="M40 58 C32 56 30 48 34 42 C40 40 46 46 44 54 C43 57 42 58 40 58 Z"/>
+          </svg>
+          <p class="stage__num">Stage one</p>
+          <h3 class="stage__title">Consult</h3>
+          <p>A free visit on site. We walk the yard with you, look at sun, slope and drainage, and talk through how you want to use it.</p>
+          <p class="stage__time"><span class="tag">Sample</span> About 60 minutes</p>
+        </li>
+        <li class="stage">
+          <svg class="stage__glyph" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M8 66 C24 62 56 62 72 66"/>
+            <path pathLength="1" d="M40 64 C40 54 40 44 41 34"/>
+            <path pathLength="1" d="M41 40 C34 40 26 36 22 28 C30 26 38 30 41 40 Z"/>
+            <path pathLength="1" d="M41 36 C46 32 54 30 60 32 C56 38 48 40 41 36 Z"/>
+          </svg>
+          <p class="stage__num">Stage two</p>
+          <h3 class="stage__title">Design</h3>
+          <p>A site plan and a written proposal: plants, materials, lighting and irrigation, with costs you can plan around.</p>
+          <p class="stage__time"><span class="tag">Sample</span> 3 to 6 weeks</p>
+        </li>
+        <li class="stage">
+          <svg class="stage__glyph" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M8 66 C24 62 56 62 72 66"/>
+            <path pathLength="1" d="M40 64 C39 48 41 32 40 14"/>
+            <path pathLength="1" d="M40 52 C32 52 24 46 20 38 C30 36 38 42 40 52 Z"/>
+            <path pathLength="1" d="M40 42 C48 42 56 36 60 28 C50 26 42 32 40 42 Z"/>
+            <path pathLength="1" d="M40 30 C34 28 30 22 30 16 C36 18 40 22 40 30 Z"/>
+            <path pathLength="1" d="M40 24 C46 22 50 18 52 12 C46 12 42 16 40 24 Z"/>
+          </svg>
+          <p class="stage__num">Stage three</p>
+          <h3 class="stage__title">Build</h3>
+          <p>Our crews install what's on the plan, from grading and hardscape through planting and the final lighting walk.</p>
+          <p class="stage__time"><span class="tag">Sample</span> Timing depends on scope; hardscape takes longer</p>
+        </li>
+        <li class="stage">
+          <svg class="stage__glyph" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M8 66 C24 62 56 62 72 66"/>
+            <path pathLength="1" d="M40 64 C39 50 41 34 40 22"/>
+            <path pathLength="1" d="M40 54 C30 54 22 48 18 40 C28 38 38 44 40 54 Z"/>
+            <path pathLength="1" d="M40 46 C50 46 58 40 62 32 C52 30 42 36 40 46 Z"/>
+            <path pathLength="1" d="M40 22 C34 18 34 10 40 6 C46 10 46 18 40 22 Z"/>
+            <path pathLength="1" d="M40 22 C32 22 26 18 26 12 C32 12 38 16 40 22 Z"/>
+            <path pathLength="1" d="M40 22 C48 22 54 18 54 12 C48 12 42 16 40 22 Z"/>
+          </svg>
+          <p class="stage__num">Stage four</p>
+          <h3 class="stage__title">Maintain</h3>
+          <p>Ongoing care plans so the garden matures the way it was drawn, season after season.</p>
+          <p class="stage__time">Weekly care plans, below</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 04 CARE PLANS -->
+  <section class="section care" id="care" aria-labelledby="care-title">
+    <div class="container">
+      <div class="care__head">
+        <div>
+          <p class="section-num"><span>04</span> Maintenance plans</p>
+          <h2 class="section-title" id="care-title">Weekly care, <em>kept simple.</em></h2>
+        </div>
+        <p class="section-lede">Three plans, one crew that knows your yard. Every price on this page is a sample for the preview.</p>
+      </div>
+
+      <!-- PLACEHOLDER: confirm maintenance plan names, inclusions and prices (all sample) -->
+      <ul class="tiers" role="list">
+        <li class="tier">
+          <h3 class="tier__name">Essential</h3>
+          <p class="tier__price"><span class="tier__from">from</span> $45 <span class="tier__per">per weekly visit</span></p>
+          <p class="tag tag--block">Sample price</p>
+          <ul class="tier__list">
+            <li>Mow</li>
+            <li>Edge</li>
+            <li>Blow</li>
+          </ul>
+          <a class="btn btn--secondary" href="#consult">Ask about Essential</a>
+        </li>
+        <li class="tier tier--featured">
+          <p class="tier__badge">Most popular</p>
+          <h3 class="tier__name">Signature</h3>
+          <p class="tier__price"><span class="tier__from">from</span> $180 <span class="tier__per">per month</span></p>
+          <p class="tag tag--block">Sample price</p>
+          <ul class="tier__list">
+            <li>Weekly mowing and edging</li>
+            <li>Bed care</li>
+            <li>Seasonal fertilizing</li>
+          </ul>
+          <a class="btn btn--primary" href="#consult">Ask about Signature</a>
+        </li>
+        <li class="tier">
+          <h3 class="tier__name">Estate</h3>
+          <p class="tier__price"><span class="tier__from">from</span> $320 <span class="tier__per">per month</span></p>
+          <p class="tag tag--block">Sample price</p>
+          <ul class="tier__list">
+            <li>Everything in Signature</li>
+            <li>Seasonal color rotation</li>
+            <li>Irrigation checks</li>
+            <li>A lighting check</li>
+          </ul>
+          <a class="btn btn--secondary" href="#consult">Ask about Estate</a>
+        </li>
+      </ul>
+
+      <!-- PLACEHOLDER: confirm "projects typically start at" figures (all sample) -->
+      <div class="ledger">
+        <h3 class="ledger__title">Projects typically start at <span class="tag">Sample</span></h3>
+        <dl class="ledger__list">
+          <div><dt>Patios</dt><dd>$18 to $28 per sq ft <span class="tag">Sample</span></dd></div>
+          <div><dt>Low-voltage lighting packages</dt><dd>from $2,400 <span class="tag">Sample</span></dd></div>
+          <div><dt>Irrigation systems</dt><dd>from $3,200 <span class="tag">Sample</span></dd></div>
+          <div><dt>Retaining walls</dt><dd>from $35 per face sq ft <span class="tag">Sample</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 WATER-WISE -->
+  <section class="section water" id="water" aria-labelledby="water-title">
+    <div class="container water__grid">
+      <div class="water__copy">
+        <p class="section-num"><span>05</span> Water-wise design</p>
+        <h2 class="section-title" id="water-title">Plants that belong here, <em>water where it's needed.</em></h2>
+        <p class="section-lede">Native and adapted plants need less supplemental water once established. We pair them with irrigation that pays attention.</p>
+
+        <ul class="notes" role="list">
+          <li>
+            <h3 class="notes__title">Smart controllers</h3>
+            <p>WaterSense-labeled smart controllers adjust watering to local weather and site conditions, which helps reduce overwatering.</p>
+          </li>
+          <li>
+            <h3 class="notes__title">Your city's rules</h3>
+            <p>We program controllers to follow your city's current watering schedule. McKinney residents can check the <a href="https://www.mckinneytexas.org/511/Outdoor-Water-Use">City of McKinney outdoor water use page</a>.</p>
+          </li>
+          <li>
+            <h3 class="notes__title">Rain sensors</h3>
+            <p>Every new automatic system includes a rain sensor.</p>
+          </li>
+          <li>
+            <h3 class="notes__title">Clay soil</h3>
+            <p>North Texas clay swells when wet, shrinks when dry and takes on water slowly once it's soaked. Good grading, amended beds and the right plants keep water moving away from your house.</p>
+          </li>
+        </ul>
+        <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number (required in all advertising) -->
+        <p class="license license--block">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
+        <figure class="water__plate">
+          <img src="../assets/img/service-irrigation-drip-line-640.webp"
+               srcset="../assets/img/service-irrigation-drip-line-640.webp 640w, ../assets/img/service-irrigation-drip-line-1200.webp 1200w"
+               sizes="(min-width: 1000px) 520px, 100vw"
+               width="1200" height="675" loading="lazy"
+               alt="Drip irrigation line running through a planted garden bed">
+          <figcaption class="caption"><span class="caption__fig">Fig. 8</span> Drip line puts water at the roots of a planted bed.</figcaption>
+        </figure>
+      </div>
+
+      <div class="field-guide">
+        <div class="field-guide__plates">
+          <figure class="specimen">
+            <img src="../assets/img/native-little-bluestem-clump-640.webp"
+                 srcset="../assets/img/native-little-bluestem-clump-640.webp 640w, ../assets/img/native-little-bluestem-clump-1200.webp 1200w"
+                 sizes="(min-width: 1000px) 300px, 50vw"
+                 width="640" height="433" loading="lazy"
+                 alt="Clumps of little bluestem grass in a planted bed">
+            <figcaption class="caption">Little bluestem, <i lang="la">Schizachyrium scoparium</i></figcaption>
+          </figure>
+          <figure class="specimen">
+            <img src="../assets/img/native-salvia-greggii-autumn-sage-640.webp"
+                 srcset="../assets/img/native-salvia-greggii-autumn-sage-640.webp 640w, ../assets/img/native-salvia-greggii-autumn-sage-1200.webp 1200w"
+                 sizes="(min-width: 1000px) 300px, 50vw"
+                 width="640" height="427" loading="lazy"
+                 alt="Autumn sage shrub covered in small red flowers">
+            <figcaption class="caption">Autumn sage, <i lang="la">Salvia greggii</i>. Photo: <a href="https://commons.wikimedia.org/wiki/File:Salvia_greggii_kz4.jpg">Krzysztof Ziarnek, Kenraiz</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+          </figure>
+        </div>
+
+        <h3 class="field-guide__title">A short field guide <span>native or adapted to North Texas</span></h3>
+        <dl class="plants">
+          <div><dt>Live oak <span class="botanical"><i lang="la">Quercus fusiformis</i></span></dt><dd>Evergreen shade tree, drought tolerant</dd></div>
+          <div><dt>Cedar elm <span class="botanical"><i lang="la">Ulmus crassifolia</i></span></dt><dd>Shade tree that handles heavy clay</dd></div>
+          <div><dt>Texas redbud <span class="botanical"><i lang="la">Cercis canadensis</i> var. <i lang="la">texensis</i></span></dt><dd>Small tree, pink-purple flowers March to April</dd></div>
+          <div><dt>Yaupon holly <span class="botanical"><i lang="la">Ilex vomitoria</i></span></dt><dd>Evergreen shrub for sun or shade</dd></div>
+          <div><dt>Autumn sage <span class="botanical"><i lang="la">Salvia greggii</i></span></dt><dd>Small shrub, blooms March to November</dd></div>
+          <div><dt>Flame acanthus <span class="botanical"><i lang="la">Anisacanthus quadrifidus</i> var. <i lang="la">wrightii</i></span></dt><dd>Red-orange flowers June to October; hummingbirds</dd></div>
+          <div><dt>Little bluestem <span class="botanical"><i lang="la">Schizachyrium scoparium</i></span></dt><dd>Native bunchgrass, copper-red in fall</dd></div>
+          <div><dt>Gulf muhly <span class="botanical"><i lang="la">Muhlenbergia capillaris</i></span></dt><dd>Ornamental grass, pink plumes in October</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 REVIEWS -->
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <p class="section-num"><span>06</span> Reviews</p>
+      <h2 class="section-title" id="reviews-title">Notes <em>from the neighborhood.</em></h2>
+      <!-- PLACEHOLDER: replace sample reviews with real, permissioned client reviews -->
+      <ul class="quotes" role="list">
+        <li class="quote">
+          <p class="tag">Sample review</p>
+          <blockquote><p>They walked every corner of the yard with us and asked how we spend our evenings before they drew a single line.</p></blockquote>
+          <p class="quote__by">Dana, homeowner in Allen</p>
+        </li>
+        <li class="quote">
+          <p class="tag">Sample review</p>
+          <blockquote><p>Clear schedule, a tidy site at the end of each day, and straight answers when we had questions about the HOA drawings.</p></blockquote>
+          <p class="quote__by">Marcus, homeowner in Frisco</p>
+        </li>
+        <li class="quote">
+          <p class="tag">Sample review</p>
+          <blockquote><p>The weekly visits are what we notice most. The beds look cared for, not just mowed around.</p></blockquote>
+          <p class="quote__by">Priya, homeowner in Prosper</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 07 SERVICE AREA + CONSULTATION -->
+  <section class="section consult" id="consult" aria-labelledby="consult-title">
+    <div class="container consult__grid">
+      <div class="consult__aside">
+        <p class="section-num"><span>07</span> Service area</p>
+        <h2 class="section-title" id="consult-title">Start with a walk <em>around the yard.</em></h2>
+        <p class="section-lede">Tell us a little about the space. We'll set up a free design consultation on site.</p>
+
+        <h3 class="area__title">Where we work</h3>
+        <ul class="area" role="list">
+          <li>McKinney</li>
+          <li>Allen</li>
+          <li>Frisco</li>
+          <li>Prosper</li>
+          <li>Celina</li>
+          <li>Fairview</li>
+          <li>Lucas</li>
+        </ul>
+        <p class="area__note">Based in McKinney, TX. Service area only.</p>
+
+        <!-- PLACEHOLDER: confirm phone number and email -->
+        <ul class="contact" role="list">
+          <li><span class="contact__label">Phone</span> <a href="tel:+19725550121">(972) 555-0121</a> <span class="tag">Sample</span></li>
+          <li><span class="contact__label">Email</span> <a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+        <svg class="botanic botanic--consult" data-draw aria-hidden="true" focusable="false"><use href="#b-grass"/></svg>
+      </div>
+
+      <form class="form" id="consult-form" aria-labelledby="form-title">
+        <h3 class="form__title" id="form-title">Request a free design consultation</h3>
+
+        <div class="form__row form__row--2">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+          </div>
+        </div>
+
+        <div class="form__row form__row--2">
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-city">City</label>
+            <select id="f-city" name="city" required>
+              <option value="">Choose a city</option>
+              <option>McKinney</option>
+              <option>Allen</option>
+              <option>Frisco</option>
+              <option>Prosper</option>
+              <option>Celina</option>
+              <option>Fairview</option>
+              <option>Lucas</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="field checks">
+          <legend>Services wanted</legend>
+          <div class="checks__grid">
+            <label class="check"><input type="checkbox" name="services" value="design"> Landscape design</label>
+            <label class="check"><input type="checkbox" name="services" value="installation"> Installation</label>
+            <label class="check"><input type="checkbox" name="services" value="hardscapes"> Hardscapes</label>
+            <label class="check"><input type="checkbox" name="services" value="outdoor-living"> Outdoor living</label>
+            <label class="check"><input type="checkbox" name="services" value="irrigation"> Irrigation</label>
+            <label class="check"><input type="checkbox" name="services" value="lighting"> Low-voltage lighting</label>
+            <label class="check"><input type="checkbox" name="services" value="drainage"> Drainage fixes</label>
+            <label class="check"><input type="checkbox" name="services" value="maintenance"> Weekly maintenance</label>
+          </div>
+        </fieldset>
+
+        <div class="form__row form__row--2">
+          <!-- PLACEHOLDER: confirm budget ranges offered in the form -->
+          <div class="field">
+            <label for="f-budget">Budget range</label>
+            <select id="f-budget" name="budget">
+              <option value="">Choose a range</option>
+              <option>Under $15,000</option>
+              <option>$15,000 to $40,000</option>
+              <option>$40,000 to $80,000</option>
+              <option>$80,000 or more</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-timeline">Timeline</label>
+            <select id="f-timeline" name="timeline">
+              <option value="">Choose a timeline</option>
+              <option>As soon as possible</option>
+              <option>In 1 to 3 months</option>
+              <option>In 3 to 6 months</option>
+              <option>Just planning for now</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="4" placeholder="What would you like the yard to do for you?"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="f-photo">Photo upload (Sample, disabled in preview)</label>
+          <input id="f-photo" name="photo" type="file" accept="image/*" disabled>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Website</label>
+          <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- PLACEHOLDER: reCAPTCHA v3 script and token field go here at launch -->
+
+        <div class="form__actions">
+          <button class="btn btn--primary btn--lg" type="button" data-form-send>Send my request</button>
+          <p class="form__note">Preview form: nothing is sent.</p>
+        </div>
+        <p class="form__status" aria-live="polite" data-form-status></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <p class="wordmark wordmark--footer"><span class="wordmark__name">Prairie Ember</span> <span class="wordmark__sub">Landscape Co.</span></p>
+      <p>Residential landscape design, installation and maintenance.</p>
+      <p>Based in McKinney, TX. Service area only.</p>
+    </div>
+    <div class="site-footer__facts">
+      <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number -->
+      <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
+      <!-- PLACEHOLDER: confirm insurance and years in business -->
+      <p>Insured (Sample)</p>
+      <p>Serving Collin County since 2012 (Sample)</p>
+    </div>
+    <div class="site-footer__contact">
+      <p><a href="tel:+19725550121">(972) 555-0121</a> (Sample)</p>
+      <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p><a href="#consult">Request a free design consultation</a></p>
+    </div>
+  </div>
+  <div class="container site-footer__legal">
+    <p>Photos are royalty-free stock, not our projects. <a href="../credits.html">Photo credits</a></p>
+    <p>&copy; 2026 Prairie Ember Landscape Co. (fictional)</p>
+  </div>
+</footer>
+
+<dialog class="clip" id="clip-dialog" aria-labelledby="clip-title">
+  <div class="clip__head">
+    <p class="clip__title" id="clip-title">A slow pan across a lawn and covered patio</p>
+    <button class="clip__close" type="button" data-clip-close aria-label="Close video">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      <span>Close</span>
+    </button>
+  </div>
+  <div class="clip__media" data-clip-slot></div>
+  <p class="caption clip__note">Stock footage, silent, 15 seconds. Press Esc to close.</p>
+</dialog>
+
+<!-- REMOVE AT LAUNCH: option switcher -->
+<!-- Copy this block unchanged to the end of <body> on every option page, just before </body>.
+     Per page, move aria-current="page" and the "on" class to that page's own link. Change nothing else.
+     Links are relative to option-a/, option-b/ and option-c/ folders (one level below the site root). -->
+<style class="pv-style">
+  html { scroll-padding-bottom: 6rem; }
+  footer, .site-footer, body > :last-of-type:not(script):not(nav) { padding-bottom: max(env(safe-area-inset-bottom), 5rem); }
+  .pv-switch {
+    position: fixed; left: 8px; bottom: 8px; z-index: 9999;
+    display: flex; gap: 2px; padding: 3px;
+    background: #fff; border: 1px solid #c8ccd2; border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.28);
+    font: 600 14px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .pv-switch a {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 44px; padding: 0 14px; border-radius: 7px;
+    color: #111; background: transparent; text-decoration: none; white-space: nowrap;
+  }
+  .pv-switch a:hover { background: #eceef1; }
+  .pv-switch a.on { color: #fff; background: #111; }
+  .pv-switch a:focus-visible { outline: 3px solid #1a73e8; outline-offset: 1px; }
+  @media (max-width: 420px) { .pv-switch a { padding: 0 11px; font-size: 13px; } }
+  @media print { .pv-switch { display: none; } }
+</style>
+<nav class="pv-switch" aria-label="Design options">
+  <a href="../option-a/">Option A</a>
+  <a href="../option-b/" class="on" aria-current="page">Option B</a>
+  <a href="../option-c/">Option C</a>
+</nav>
+<!-- /REMOVE AT LAUNCH -->
+</body>
+</html>
