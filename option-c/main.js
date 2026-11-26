@@ -115,16 +115,18 @@
       }
     });
 
-    // 12-month strip: stamp "Now" on this month; clicking a month opens its season.
+    // 12-month strip (aria-hidden decoration; the ARIA tabs are the accessible control):
+    // stamp "Now" on this month; on wider screens a mouse click on a month opens its season.
+    var wide = window.matchMedia ? window.matchMedia("(min-width: 640px)") : { matches: true };
     months.forEach(function (m) {
       if (Number(m.getAttribute("data-month")) === today.getMonth()) {
         var stamp = document.createElement("span");
         stamp.className = "cal-now";
         stamp.textContent = "Now";
         m.appendChild(stamp);
-        m.setAttribute("aria-current", "date");
       }
       m.addEventListener("click", function () {
+        if (!wide.matches) { return; }
         var key = m.getAttribute("data-season");
         tabs.forEach(function (t, i) { if (t.getAttribute("data-season") === key) { select(i, false, true); } });
       });

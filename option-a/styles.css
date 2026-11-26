@@ -166,7 +166,7 @@
     letter-spacing: -0.02em;
     line-height: 1.04;
   }
-  .section-title em { color: var(--amber-hi); font-weight: 300; }
+  .section-title em { color: var(--amber-hi); font-weight: 300; white-space: nowrap; }
   .section-title--xl { font-size: clamp(2.5rem, 5.4vw, 5rem); }
 
   .section-lede { color: var(--cream-2); font-size: clamp(1.05rem, 1.3vw, 1.2rem); max-width: 34rem; }
@@ -499,7 +499,7 @@
     font-size: 0.9rem; font-weight: 500; color: var(--cream);
     background: linear-gradient(180deg, transparent, rgb(8 14 11 / 0.88));
   }
-  .gallery__item--feature figcaption { padding: 4rem 1.75rem 1.5rem; font-family: var(--font-display); font-size: clamp(1.15rem, 1.6vw, 1.5rem); }
+  .gallery__item--feature figcaption { text-wrap: balance; padding: 4rem 1.75rem 1.5rem; font-family: var(--font-display); font-size: clamp(1.15rem, 1.6vw, 1.5rem); }
   .gallery__kicker {
     display: block; margin-bottom: 0.2rem;
     font-family: var(--font-body); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber-hi);
