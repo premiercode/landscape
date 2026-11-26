@@ -846,3 +846,11 @@
   .site-header, .hero__cue, .preview-bar { position: static; }
   .hero__media, .reviews__media { display: none; }
 }
+
+/* Switcher side effect: the library switcher pads every direct child of <body> that is the last of its
+   tag type (meant for the footer). These higher-specificity rules restore this page's own
+   padding on everything except the footer. Remove with the switcher at launch. */
+.skip-link.skip-link { padding-bottom: 0.75rem; }
+.preview-bar.preview-bar { padding-bottom: 0.55rem; }
+.site-header.site-header { padding-bottom: 0; }
+body > main:not(#_) { padding-bottom: 0; }

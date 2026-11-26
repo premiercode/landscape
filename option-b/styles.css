@@ -1198,3 +1198,13 @@ em { font-style: italic; }
   .js .botanic[data-draw], .js .stages[data-draw] .stage__glyph { stroke-dashoffset: 0; }
   .plate:hover img { transform: none; }
 }
+
+/* Switcher side effect: the library switcher pads every direct child of <body> that is the last of its
+   tag type (meant for the footer). These higher-specificity rules restore this page's own
+   padding on everything except the footer. Remove with the switcher at launch. */
+.skip-link.skip-link { padding-bottom: 0.75rem; }
+.preview-bar.preview-bar { padding-bottom: 0.55rem; }
+.clip.clip { padding-bottom: clamp(1rem, 0.5rem + 1.5vw, 1.75rem); }
+body > svg:not(#_) { padding-bottom: 0; }
+.site-header.site-header { padding-bottom: 0; }
+body > main:not(#_) { padding-bottom: 0; }

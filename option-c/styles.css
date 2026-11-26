@@ -616,3 +616,11 @@ input[type="file"]:disabled { opacity: .75; cursor: not-allowed; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Switcher side effect: the library switcher pads every direct child of <body> that is the last of its
+   tag type (meant for the footer). These higher-specificity rules restore this page's own
+   padding on everything except the footer. Remove with the switcher at launch. */
+.skip-link.skip-link { padding-bottom: .7rem; }
+.preview-bar.preview-bar { padding-bottom: .55rem; }
+.site-header.site-header { padding-bottom: 0; }
+body > main:not(#_) { padding-bottom: 0; }
