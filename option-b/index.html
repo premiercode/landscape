@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--
   PITCH NOTE (Option B, Garden journal): an airy, editorial homepage that reads like a well-edited
-  garden magazine, with hand-drawn botanical line work, a sage and cream palette and the project
+  garden magazine, with hand-drawn botanical line work, a sage and cream palette and the photo
   gallery as the centerpiece.
-  Look first at: the framed hero video (pause/play, "Watch the full clip"), then scroll to section 02,
-  the asymmetric project spread and the before-and-after slider.
+  Look first at: the framed hero video (pause/play, "Watch the full clip"), then scroll to the
+  gallery, the asymmetric spread and the before-and-after slider.
 -->
 <html lang="en">
 <head>
@@ -71,7 +71,7 @@
     <nav class="site-nav" aria-label="Primary">
       <ul>
         <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#care">Care plans</a></li>
         <li><a href="#water">Water-wise</a></li>
@@ -93,7 +93,7 @@
         <p class="hero__lede">Prairie Ember designs, builds and looks after residential landscapes in McKinney and the cities around it: planting, patios, outdoor rooms, and the irrigation and lighting that hold it all together.</p>
         <div class="hero__actions">
           <a class="btn btn--primary btn--lg" href="#consult">Request a free design consultation</a>
-          <a class="btn btn--link" href="#projects">See the project gallery <span aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--link" href="#gallery">See the gallery <span aria-hidden="true">&rarr;</span></a>
         </div>
         <!-- PLACEHOLDER: confirm consultation terms (free, length on site, follow-up timing) -->
         <p class="hero__note"><span class="tag">Sample</span> Free, about 60 minutes on site; concept follow-up within two weeks.</p>
@@ -114,7 +114,7 @@
           </button>
         </div>
         <figcaption class="caption hero__caption">
-          <span class="hero__caption-text"><span class="caption__fig">Fig. 1</span> A slow pan across a lawn and covered patio. Stock footage, silent.</span>
+          <span class="hero__caption-text">A slow pan across a lawn and covered patio. Stock footage, silent.</span>
           <button class="btn btn--quiet hero__clip" type="button" data-clip-open>
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
             Watch the full clip
@@ -124,69 +124,60 @@
     </div>
   </section>
 
-  <!-- 01 SERVICES -->
+  <!-- SERVICES -->
   <section class="section services" id="services" aria-labelledby="services-title">
     <div class="container services__grid">
       <div class="services__intro">
-        <p class="section-num"><span>01</span> Services</p>
-        <h2 class="section-title" id="services-title">One studio, from <em>site plan</em> to Saturday morning.</h2>
-        <p class="section-lede">We draw the plan, build what's on it and keep it looking the way it was drawn. Eight things we do, and do often.</p>
+        <h2 class="section-title" id="services-title">One studio, from site plan to Saturday morning.</h2>
+        <p class="section-lede">We draw the plan, build what's on it and keep it looking the way it was drawn. Eight services, one crew, and the same people at your house from the first sketch to the weekly visit.</p>
         <figure class="services__plate">
           <img src="../assets/img/service-design-garden-plan-drawing-640.webp"
                srcset="../assets/img/service-design-garden-plan-drawing-640.webp 640w, ../assets/img/service-design-garden-plan-drawing-1200.webp 1200w"
                sizes="(min-width: 1000px) 400px, 100vw"
                width="1200" height="800" loading="lazy"
                alt="Hand-colored landscape planting plan with tree and shrub symbols">
-          <figcaption class="caption"><span class="caption__fig">Fig. 2</span> A hand-colored planting plan, the kind of drawing every project starts from.</figcaption>
+          <figcaption class="caption">A hand-colored planting plan, the kind of drawing every project starts from.</figcaption>
         </figure>
       </div>
 
       <ol class="service-list" role="list">
         <li class="service">
-          <span class="service__num" aria-hidden="true">i.</span>
           <h3 class="service__title">Landscape design</h3>
           <p>A measured site plan from a landscape designer: beds, paths, trees, and where the sun and water go.</p>
           <!-- PLACEHOLDER: confirm design fee policy and range ($1,500 to $4,500 sample) -->
           <p class="service__meta"><span class="tag">Sample</span> Design fee credited toward your build.</p>
         </li>
         <li class="service">
-          <span class="service__num" aria-hidden="true">ii.</span>
           <h3 class="service__title">Installation</h3>
           <p>Beds, sod, trees, shrubs and seasonal color, planted into amended soil.</p>
           <!-- PLACEHOLDER: confirm plant warranty terms -->
           <p class="service__meta"><span class="tag">Sample</span> 1-year limited warranty on trees and shrubs we install: one replacement, seasonal color excluded.</p>
         </li>
         <li class="service">
-          <span class="service__num" aria-hidden="true">iii.</span>
           <h3 class="service__title">Hardscapes</h3>
           <p>Patios, flagstone paths and retaining walls. Many North Texas HOAs require architectural approval for these, so we prepare drawings for your HOA submittal.</p>
         </li>
         <li class="service">
-          <span class="service__num" aria-hidden="true">iv.</span>
           <h3 class="service__title">Outdoor living</h3>
           <p>Pergolas, fire pits and outdoor kitchens, placed where you'll actually sit.</p>
         </li>
         <li class="service service--irrigation">
-          <span class="service__num" aria-hidden="true">v.</span>
           <h3 class="service__title">Irrigation</h3>
           <p>Installation, repair and smart controllers, zoned for the plants each line waters. <a href="#water">How we irrigate</a>.</p>
           <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number (required in all advertising) -->
-          <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
+          <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 <span class="tag">Sample</span></p>
           <!-- PLACEHOLDER: confirm irrigation warranty wording -->
           <p class="service__meta"><span class="tag">Sample</span> Written warranty on every new irrigation system.</p>
         </li>
         <li class="service">
-          <span class="service__num" aria-hidden="true">vi.</span>
           <h3 class="service__title">Low-voltage landscape lighting</h3>
           <p>Path, bed and tree lighting so the garden still reads after dark.</p>
         </li>
         <li class="service">
-          <span class="service__num" aria-hidden="true">vii.</span>
           <h3 class="service__title">Drainage fixes</h3>
           <p>French drains and grading, worked out on the site plan before anything is built. <a href="#water">Why clay matters</a>.</p>
         </li>
         <li class="service">
-          <span class="service__num" aria-hidden="true">viii.</span>
           <h3 class="service__title">Weekly maintenance</h3>
           <p>Mowing, edging, bed care and seasonal fertilizing on a weekly plan. <a href="#care">See the care plans</a>.</p>
         </li>
@@ -194,12 +185,12 @@
     </div>
   </section>
 
-  <!-- 02 PROJECTS (centerpiece) -->
-  <section class="section projects" id="projects" aria-labelledby="projects-title">
+  <!-- GALLERY (centerpiece) -->
+  <section class="section projects" id="gallery" aria-labelledby="gallery-title">
     <div class="container">
       <header class="projects__head">
-        <p class="section-num"><span>02</span> Featured projects</p>
-        <h2 class="section-title section-title--xl" id="projects-title">Gardens for <em>sitting in,</em> not just looking at.</h2>
+        <h2 class="section-title section-title--xl" id="gallery-title">Ideas we design around</h2>
+        <p class="section-lede">Stock photos, not our work, picked for ideas we come back to: a pond under a pavilion, one clipped lawn panel, gravel rooms and a pair of fire bowls.</p>
         <svg class="botanic botanic--fern" data-draw aria-hidden="true" focusable="false"><use href="#b-fern"/></svg>
       </header>
 
@@ -212,7 +203,7 @@
                  width="1400" height="934" loading="lazy"
                  alt="Backyard with a rock-edged pond, ornamental grasses and a wooden pavilion">
           </div>
-          <figcaption class="caption"><span class="caption__fig">Fig. 3</span> Water, grasses and shade: a rock-edged pond below a timber pavilion.</figcaption>
+          <figcaption class="caption"><span class="caption__fig">Fig. 1</span> Water, grasses and shade: a rock-edged pond below a timber pavilion.</figcaption>
         </figure>
 
         <figure class="plate plate--b reveal">
@@ -223,7 +214,7 @@
                  width="800" height="533" loading="lazy"
                  alt="Modern courtyard with a clipped lawn panel under deep roof overhangs">
           </div>
-          <figcaption class="caption"><span class="caption__fig">Fig. 4</span> A single lawn panel holds a modern courtyard together.</figcaption>
+          <figcaption class="caption"><span class="caption__fig">Fig. 2</span> A single lawn panel holds a modern courtyard together.</figcaption>
         </figure>
 
         <figure class="plate plate--c reveal">
@@ -234,7 +225,7 @@
                  width="800" height="533" loading="lazy"
                  alt="Gravel patio with a white outdoor sofa, bistro table and a wooden planter box beside a white farmhouse">
           </div>
-          <figcaption class="caption"><span class="caption__fig">Fig. 5</span> Gravel, a planter box and a sofa: a side yard becomes a sitting room.</figcaption>
+          <figcaption class="caption"><span class="caption__fig">Fig. 3</span> Gravel, a planter box and a sofa: a side yard becomes a sitting room.</figcaption>
         </figure>
 
         <figure class="plate plate--d reveal">
@@ -245,7 +236,7 @@
                  width="1400" height="933" loading="lazy"
                  alt="Two round gravel seating areas with fire bowls set into a large lawn">
           </div>
-          <figcaption class="caption"><span class="caption__fig">Fig. 6</span> Two gravel circles with fire bowls, set loose in a wide lawn.</figcaption>
+          <figcaption class="caption"><span class="caption__fig">Fig. 4</span> Two gravel circles with fire bowls, set loose in a wide lawn.</figcaption>
         </figure>
 
         <aside class="spread__note reveal" aria-label="How we read a yard">
@@ -261,14 +252,14 @@
                  width="1400" height="933" loading="lazy"
                  alt="Flagstone terrace with loungers, umbrellas and flowering borders">
           </div>
-          <figcaption class="caption"><span class="caption__fig">Fig. 7</span> Flagstone paving softened by flowering borders.</figcaption>
+          <figcaption class="caption"><span class="caption__fig">Fig. 5</span> Flagstone paving softened by flowering borders.</figcaption>
         </figure>
       </div>
 
       <!-- Before and after -->
       <div class="compare">
         <div class="compare__copy">
-          <h3 class="compare__title">Before <em>and</em> after</h3>
+          <h3 class="compare__title">Before and after</h3>
           <p>Drag the handle, or focus it and use the arrow keys, to compare a bare yard with a finished one.</p>
                   </div>
         <figure class="ba" data-ba aria-labelledby="ba-note">
@@ -300,20 +291,19 @@
     </div>
   </section>
 
-  <!-- 03 PROCESS -->
+  <!-- PROCESS -->
   <section class="section process" id="process" aria-labelledby="process-title">
     <div class="container">
-      <p class="section-num"><span>03</span> Our process</p>
-      <h2 class="section-title" id="process-title">Four stages, <em>like anything that grows.</em></h2>
+      <h2 class="section-title" id="process-title">Consult, design, build, maintain.</h2>
+      <p class="section-lede">The free visit comes first. Nothing gets built until you have the site plan and a written proposal in hand.</p>
 
       <!-- PLACEHOLDER: confirm process durations (all sample) -->
-      <ol class="stages" role="list" data-draw>
+      <ol class="stages" role="list" data-draw aria-label="Four stages, in order">
         <li class="stage">
           <svg class="stage__glyph" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
             <path pathLength="1" d="M8 66 C24 62 56 62 72 66"/>
             <path pathLength="1" d="M40 58 C32 56 30 48 34 42 C40 40 46 46 44 54 C43 57 42 58 40 58 Z"/>
           </svg>
-          <p class="stage__num">Stage one</p>
           <h3 class="stage__title">Consult</h3>
           <p>A free visit on site. We walk the yard with you, look at sun, slope and drainage, and talk through how you want to use it.</p>
           <p class="stage__time"><span class="tag">Sample</span> About 60 minutes</p>
@@ -325,7 +315,6 @@
             <path pathLength="1" d="M41 40 C34 40 26 36 22 28 C30 26 38 30 41 40 Z"/>
             <path pathLength="1" d="M41 36 C46 32 54 30 60 32 C56 38 48 40 41 36 Z"/>
           </svg>
-          <p class="stage__num">Stage two</p>
           <h3 class="stage__title">Design</h3>
           <p>A site plan and a written proposal: plants, materials, lighting and irrigation, with costs you can plan around.</p>
           <p class="stage__time"><span class="tag">Sample</span> 3 to 6 weeks</p>
@@ -339,7 +328,6 @@
             <path pathLength="1" d="M40 30 C34 28 30 22 30 16 C36 18 40 22 40 30 Z"/>
             <path pathLength="1" d="M40 24 C46 22 50 18 52 12 C46 12 42 16 40 24 Z"/>
           </svg>
-          <p class="stage__num">Stage three</p>
           <h3 class="stage__title">Build</h3>
           <p>Our crews install what's on the plan, from grading and hardscape through planting and the final lighting walk.</p>
           <p class="stage__time"><span class="tag">Sample</span> Timing depends on scope; hardscape takes longer</p>
@@ -354,7 +342,6 @@
             <path pathLength="1" d="M40 22 C32 22 26 18 26 12 C32 12 38 16 40 22 Z"/>
             <path pathLength="1" d="M40 22 C48 22 54 18 54 12 C48 12 42 16 40 22 Z"/>
           </svg>
-          <p class="stage__num">Stage four</p>
           <h3 class="stage__title">Maintain</h3>
           <p>Ongoing care plans so the garden matures the way it was drawn, season after season.</p>
           <p class="stage__time">Weekly care plans, below</p>
@@ -363,13 +350,12 @@
     </div>
   </section>
 
-  <!-- 04 CARE PLANS -->
+  <!-- CARE PLANS -->
   <section class="section care" id="care" aria-labelledby="care-title">
     <div class="container">
       <div class="care__head">
         <div>
-          <p class="section-num"><span>04</span> Maintenance plans</p>
-          <h2 class="section-title" id="care-title">Weekly care, <em>kept simple.</em></h2>
+          <h2 class="section-title" id="care-title">Weekly maintenance plans</h2>
         </div>
         <p class="section-lede">Three plans, one crew that knows your yard. Every price on this page is a sample for the preview.</p>
       </div>
@@ -426,12 +412,11 @@
     </div>
   </section>
 
-  <!-- 05 WATER-WISE -->
+  <!-- WATER-WISE -->
   <section class="section water" id="water" aria-labelledby="water-title">
     <div class="container water__grid">
       <div class="water__copy">
-        <p class="section-num"><span>05</span> Water-wise design</p>
-        <h2 class="section-title" id="water-title">Plants that belong here, <em>water where it's needed.</em></h2>
+        <h2 class="section-title" id="water-title">Native plants, heavy clay and a controller that checks the weather.</h2>
         <p class="section-lede">Native and adapted plants need less supplemental water once established. We pair them with irrigation that pays attention.</p>
 
         <ul class="notes" role="list">
@@ -453,14 +438,14 @@
           </li>
         </ul>
         <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number (required in all advertising) -->
-        <p class="license license--block">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
+        <p class="license license--block">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 <span class="tag">Sample</span></p>
         <figure class="water__plate">
           <img src="../assets/img/service-irrigation-drip-line-640.webp"
                srcset="../assets/img/service-irrigation-drip-line-640.webp 640w, ../assets/img/service-irrigation-drip-line-1200.webp 1200w"
                sizes="(min-width: 1000px) 520px, 100vw"
                width="1200" height="675" loading="lazy"
                alt="Drip irrigation line running through a planted garden bed">
-          <figcaption class="caption"><span class="caption__fig">Fig. 8</span> Drip line puts water at the roots of a planted bed.</figcaption>
+          <figcaption class="caption"><span class="caption__fig">Fig. 6</span> Drip line puts water at the roots of a planted bed.</figcaption>
         </figure>
       </div>
 
@@ -484,7 +469,7 @@
           </figure>
         </div>
 
-        <h3 class="field-guide__title">A short field guide <span>native or adapted to North Texas</span></h3>
+        <h3 class="field-guide__title">A short field guide <span>Eight plants native or adapted to North Texas</span></h3>
         <dl class="plants">
           <div><dt>Live oak <span class="botanical"><i lang="la">Quercus fusiformis</i></span></dt><dd>Evergreen shade tree, drought tolerant</dd></div>
           <div><dt>Cedar elm <span class="botanical"><i lang="la">Ulmus crassifolia</i></span></dt><dd>Shade tree that handles heavy clay</dd></div>
@@ -499,11 +484,10 @@
     </div>
   </section>
 
-  <!-- 06 REVIEWS -->
+  <!-- REVIEWS -->
   <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
     <div class="container">
-      <p class="section-num"><span>06</span> Reviews</p>
-      <h2 class="section-title" id="reviews-title">Notes <em>from the neighborhood.</em></h2>
+      <h2 class="section-title" id="reviews-title">Sample reviews from Allen, Frisco and Prosper</h2>
       <!-- PLACEHOLDER: replace sample reviews with real, permissioned client reviews -->
       <ul class="quotes" role="list">
         <li class="quote">
@@ -525,12 +509,11 @@
     </div>
   </section>
 
-  <!-- 07 SERVICE AREA + CONSULTATION -->
+  <!-- SERVICE AREA + CONSULTATION -->
   <section class="section consult" id="consult" aria-labelledby="consult-title">
     <div class="container consult__grid">
       <div class="consult__aside">
-        <p class="section-num"><span>07</span> Service area</p>
-        <h2 class="section-title" id="consult-title">Start with a walk <em>around the yard.</em></h2>
+        <h2 class="section-title" id="consult-title">Start with a walk around the yard.</h2>
         <p class="section-lede">Tell us a little about the space. We'll set up a free design consultation on site.</p>
 
         <h3 class="area__title">Where we work</h3>
@@ -663,7 +646,7 @@
     </div>
     <div class="site-footer__facts">
       <!-- PLACEHOLDER: confirm irrigator name and TCEQ LI number -->
-      <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 (Sample)</p>
+      <p class="license">TCEQ Licensed Irrigator: Sam Rivera, LI0000000 <span class="tag">Sample</span></p>
       <!-- PLACEHOLDER: confirm insurance and years in business -->
       <p>Insured <span class="tag">Sample</span></p>
       <p>Serving Collin County since 2012 <span class="tag">Sample</span></p>
